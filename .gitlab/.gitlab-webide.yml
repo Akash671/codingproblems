@@ -7,3 +7,15 @@ terminal:
   variables:
     RAILS_ENV: "test"
     NODE_ENV: "test"
+
+
+schemas:
+  - uri: https://json.schemastore.org/package
+    match:
+      - package.json
+  - uri: https://somewebsite.com/first/raw/url
+    match:
+      - data/release_posts/unreleased/*.{yml,yaml}
+  - uri: https://somewebsite.com/second/raw/url
+    match:
+      - "*.meta.json"
