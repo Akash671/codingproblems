@@ -3,7 +3,7 @@ terminal:
   image: node:10-alpine
   before_script:
     - apk update
-  script: sleep 60
+  script: sleep 120
   variables:
     RAILS_ENV: "test"
     NODE_ENV: "test"
