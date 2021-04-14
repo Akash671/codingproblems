@@ -5,7 +5,7 @@ using namespace std;
 
 int solve(int n)
 {
-	n=n-2;
+	n=n-2;  //remove extra part
 	n=floor(n/2);
 	return n*(n+1)/2;
 }
